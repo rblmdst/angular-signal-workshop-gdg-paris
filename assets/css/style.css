@@ -1,0 +1,223 @@
+:root {
+  --code-bg-color: #f3f6fa;
+  --code-text-color: #567482;
+  --border-color: #dce6f0;
+  --table-border-color: #e9ebec;
+  --hr-border-color: #eff0f1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+html {
+  font-size: 10px;
+}
+body {
+  color: #444;
+}
+header nav li {
+  list-style: none;
+}
+
+p {
+  margin: 1em 0;
+}
+p,
+ol,
+ul,
+li,
+input,
+a {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  font-family: inherit;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+}
+h1 {
+  font-size: 4rem;
+  display: inline-block;
+  margin: 1.6rem 0;
+}
+h2 {
+  font-size: 3.2rem;
+  margin-top: 4rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin-top: 3rem;
+  clear: both;
+}
+
+header,
+footer {
+  padding: 20px;
+  background-color: #fff;
+}
+
+footer {
+  color: #746e7c;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 32px;
+  display: block;
+  margin: 0;
+  color: #fff;
+}
+
+header h1 a {
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+header nav li a,
+header h1 li a {
+  color: #f637e3;
+  text-decoration: none;
+}
+header nav li a {
+  display: inline-block;
+  padding: 10px 20px;
+}
+header nav li:hover {
+  border-bottom: 2px solid #fff;
+}
+header nav li:hover {
+  border-bottom-color: #f637e3;
+}
+main {
+  padding: 30px;
+  width: 80%;
+  margin: 0 auto;
+  min-height: 83vh; /* 100vh; */
+}
+footer {
+  text-align: center;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+main li {
+  list-style-position: inside;
+}
+
+main h1 {
+  color: #868282;
+  text-align: center;
+  display: block;
+}
+
+header img {
+  width: 60px;
+  margin: 10px auto;
+  display: block;
+}
+
+a {
+  color: #f637e3;
+}
+
+/* Code */
+code {
+  padding: 2px 4px;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.9rem;
+  color: var(--code-text-color);
+  background-color: var(--code-bg-color);
+  border-radius: 0.3rem;
+}
+
+pre {
+  padding: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  color: var(--code-text-color);
+  word-wrap: normal;
+  background-color: var(--code-bg-color);
+  border: solid 1px var(--border-color);
+  border-radius: 0.3rem;
+}
+pre > code {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--code-text-color);
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.highlight {
+  margin-bottom: 1rem;
+}
+
+.highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.highlight pre,
+pre {
+  padding: 0.8rem;
+  overflow: auto;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  border-radius: 0.3rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+pre code,
+pre tt {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+pre code:before,
+pre code:after,
+pre tt:before,
+pre tt:after {
+  content: normal;
+}
+
+ul ul {
+  text-indent: 15px;
+}
+
+@media screen and (max-width: 640px) {
+  main {
+    width: 100%;
+  }
+  header nav {
+    flex-wrap: wrap;
+  }
+}
