@@ -20,14 +20,14 @@ signaux.
 
 - **Partie 1 : Découverte des signaux (15min)**
 
-  Nous ferons une découverte rapide de l'API des signaux, comment créer; lire et modifier le
-  contenu d'un signal. Nous aborderons également les concepts de signaux calculés et d'effets.
+Nous ferons une découverte rapide de l'API des signaux, comment créer; lire et modifier le
+contenu d'un signal. Nous aborderons également les concepts de signaux calculés et d'effets.
 
 - **Partie 2 : Pratique (1h)**
 
-  Implémentation d'une liste de produits doté d'un filtre et de quelques bouttons d'actions
-  permettant de supprimer tous les produits de la liste, de supprimer un élement spécifique de
-  la liste, etc...
+Implémentation d'une liste de produits doté d'un filtre et de quelques bouttons d'actions
+permettant de supprimer tous les produits de la liste, de supprimer un élement spécifique de
+la liste, etc...
 
 - **Partie 3 : QA (15min)**
 

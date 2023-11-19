@@ -1,5 +1,6 @@
-# Angular Signal
+# 📡 Angular Signal
 
+<img src="https://rblmdst.github.io/angular-signal-workshop-gdg-paris/assets/images/signal_create_read.png">
 ### Creation
 
 ```ts
@@ -26,16 +27,18 @@ user.update(currentInfos => ({...currentInfos, lastName: "Assiongbon"})
 
 ### How it works
 
+<img src="https://rblmdst.github.io/angular-signal-workshop-gdg-paris/assets/images/signal_how_it_works.png">
+
 - Update content value => **notify consumer for value change without sending the value**
 - Interrested **consumers are in charge to fetch the new value themselves** in order to get the last value.
 
 ### Push or Pull
 
-### Observable : Push
+#### 🔭 Observable : Push
 
 The consumer is notified with the last value when a change occured.
 
-### Signal: Hybrid (Push + Pull)
+#### 📡 Signal: Hybrid (Push + Pull)
 
 - **Push based** for change notification
 - **Pull based** for value fetching
@@ -43,6 +46,8 @@ The consumer is notified with the last value when a change occured.
 ### Computed Signal (Kind of selector)
 
 Signal which value is computed based on other_s signal_s (dependent_s signal_s) value.
+
+<img src="https://rblmdst.github.io/angular-signal-workshop-gdg-paris/assets/images/signal_computed_signal.png">
 
 ```ts
 const user = signal<User>({ id: "eab2", firstname: "Modeste", lastName: "A." });
@@ -55,7 +60,7 @@ user.update((currentInfos) => ({ ...currentInfos, lastName: "Assiongbon" }));
 userFullName(); // "Modeste Assiongbon"
 ```
 
-**Note :**
+**💡 Note :**
 
 - Value is memoized to avoid re-computation each time we try to get the content.
 - Value is computed only when we pulled the content explicitly
@@ -63,12 +68,11 @@ userFullName(); // "Modeste Assiongbon"
 
 ### Effect : Do something (effect) when dependent_s signal_s value changed
 
-- Usage: logging, make API call, etc.
-
+- **Usage**: logging, make API call, etc.
 - Must be set in injection context (constructor time) beacause base on DestroyRef (use for auto-clean)
 - **effects** run their callback on start and when their dependencies change.
 
-**Note :** Do not update dependent signal in effect => infinite loop
+**💡 Note :** Do not update dependent signal in effect => infinite loop
 
 ### Angular
 
