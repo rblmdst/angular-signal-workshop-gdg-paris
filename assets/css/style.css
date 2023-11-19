@@ -76,12 +76,12 @@ header h1 {
   font-size: 32px;
   display: block;
   margin: 0;
-  color: #fff;
+  color: #f637e3;
 }
 
 header h1 a {
   font-size: 32px;
-  color: #fff;
+  color: #f637e3;
   text-decoration: none;
 }
 
@@ -116,7 +116,7 @@ footer {
   text-align: center;
 }
 footer a {
-  color: #fff;
+  color: #3b3a3a;
   text-decoration: none;
 }
 main li {

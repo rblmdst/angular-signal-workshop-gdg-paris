@@ -6,7 +6,7 @@ comme une nouvelle façon de dévélopper des applications réactives en utilisa
 
 Cet atelier sera l'occasion pour vous de découvrir et de vous familiariser avec l'API des Signaux et de mettre en pratique son utilisation grâce à une implémentation concrète.
 
-## Niveau : Débutant
+## Niveau (Débutant)
 
 Savoir créer des composants et comment échanger des données entre
 composants via les inputs et les outputs.
@@ -19,12 +19,16 @@ signaux.
 ## Structure du workshop :
 
 - **Partie 1 : Découverte des signaux (15min)**
+
   Nous ferons une découverte rapide de l'API des signaux, comment créer; lire et modifier le
   contenu d'un signal. Nous aborderons également les concepts de signaux calculés et d'effets.
+
 - **Partie 2 : Pratique (1h)**
+
   Implémentation d'une liste de produits doté d'un filtre et de quelques bouttons d'actions
   permettant de supprimer tous les produits de la liste, de supprimer un élement spécifique de
   la liste, etc...
+
 - **Partie 3 : QA (15min)**
 
 ## Requirements:
@@ -37,7 +41,7 @@ Avoir un ordinateur sur lequel est déjà installé
 
 ## Mise en place de l'environnement
 
-```bash
+```
 #cloned the workshop branch
 git clone -b workshop_signal https://github.com/rblmdst/ng_v16_lab.git angular_signal
 
